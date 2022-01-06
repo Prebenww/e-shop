@@ -7,7 +7,8 @@ import SignInAndSignUpPage from "./components/pages/sign-in-and-sign-up/sign-in-
 //import Header from "./components/header/header.component";
 import {auth, createUserProfileDocument} from "./firebase/firebase.utils";
 import React from "react";
-import Interview from "./components/pages/homepage/intervju";
+
+import HomePage from "./components/pages/homepage/homepage.component";
 
 
 
@@ -52,7 +53,7 @@ class App extends React.Component {
             <div>
               {/*  <Header currentUser={this.state.currentUser} />*/}
                 <Switch>
-                    <Route exact path="/" component={Interview}/>
+                    <Route exact path="/" component={HomePage}/>
                     <Route path="/shop" component={ShopPage}/>
                     <Route path="/signin" component={SignInAndSignUpPage}/>
 
